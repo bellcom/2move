@@ -5,11 +5,6 @@
 
 
 
-ul .menu {
-    
-    list-style: none!important;
-}
-
 
 .messages {
   background: no-repeat 10px 17px;  /* LTR */
@@ -215,4 +210,10 @@ ul.tabs {
 .tabs a:focus,
 .tabs a:hover {
   background-color: #f5f5f5;
+}
+
+
+ul .menu {
+    
+    display: flex!important;
 }
