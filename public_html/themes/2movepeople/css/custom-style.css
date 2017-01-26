@@ -13,6 +13,15 @@
 
 /*Header*/
 
+.breadcrumb li {
+    
+    margin-right: 25px;
+}
+
+.breadcrumb ul {
+    
+    background-position: 93px!important;
+}
 
 .toolbar-menu {
     
