@@ -20,6 +20,7 @@ modules/contrib
 profiles/contrib
 themes/contrib
 sites/default/files
+sites/2move2017.dd
 
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
