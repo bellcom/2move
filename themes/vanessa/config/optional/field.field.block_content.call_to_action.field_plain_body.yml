@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.call_to_action
+    - field.storage.block_content.field_plain_body
+id: block_content.call_to_action.field_plain_body
+field_name: field_plain_body
+entity_type: block_content
+bundle: call_to_action
+label: Body
+description: 'Main body section for the call to action.'
+required: true
+translatable: true
+default_value:
+  -
+    value: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas harum, hic officiis commodi reprehenderit explicabo'
+default_value_callback: ''
+settings: {  }
+field_type: string_long

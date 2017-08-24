@@ -1,0 +1,34 @@
+# Default features
+features:
+   comment_user_picture: true
+   comment_user_verification: true
+   favicon: true
+   logo: true
+   name: true
+   node_user_picture: true
+   slogan: true
+anchor_hero: 'home'
+anchor_sponsors: 'sponsors'
+anchor_quick_facts: 'quick-facts'
+anchor_fullwidth_image: 'fullwidth-image'
+anchor_percentage_rings: 'percentage-rings'
+anchor_video_popup: 'video-popup'
+anchor_image_left: 'image-left'
+anchor_image_right: 'image-right'
+anchor_call_to_action: 'call-to-action'
+anchor_testimonials: 'testimonials'
+anchor_pricing_tables: 'pricing-tables'
+anchor_newsletter: 'newsletter'
+anchor_contact_details: 'contact'
+footer_copyright: 'Copyright © 2016 Created by Cocoon'
+footer_facebook: 'http://createdbycocoon.com/drupal-themes'
+footer_twitter: 'http://createdbycocoon.com/drupal-themes'
+footer_pinterest: 'http://createdbycocoon.com/drupal-themes'
+footer_youtube: 'http://createdbycocoon.com/drupal-themes'
+footer_linkedin: 'http://createdbycocoon.com/drupal-themes'
+map_show: 1
+map_latitude: '45.200'
+map_longitude: '-72.4310'
+map_address: 'London, United Kingdom'
+map_phone: '345 678 91 23'
+map_email: 'vanessamail@mail.com'
