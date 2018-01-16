@@ -936,7 +936,7 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.56);
 .text p { color: #fff; }
 
 #newsletter {
-    background: #1b8af0;
+    background: #5d81a4;
     height: 200px;
     padding: 0;
     display: flex;
@@ -944,7 +944,7 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.56);
     align-items: center;
 }
 .region-image-left .browser-content {
-     background-image: url('../images/screens/screen_02.png');
+     background-image: url('../images/screens/screen__03.png');
 }
 
 .browser-content {
@@ -954,7 +954,7 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.56);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../images/screens/screen_01.png');
+    background-image: url('../images/screens/screen__02.png');
     background-size: 100%;
     background-position: cover;
     background-repeat: no-repeat;
