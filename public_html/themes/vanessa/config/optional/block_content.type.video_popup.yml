@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: video_popup
-label: 'Video popup'
-revision: 0
-description: 'A video popup with YouTube or Vimeo video.'

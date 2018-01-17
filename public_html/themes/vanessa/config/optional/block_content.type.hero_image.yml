@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: hero_image
-label: 'Hero image'
-revision: 0
-description: 'A hero section with background image and popup video.'

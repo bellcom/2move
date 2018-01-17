@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: image_right
-label: 'Image right'
-revision: 0
-description: 'A block with an image on the right and text on the left.'

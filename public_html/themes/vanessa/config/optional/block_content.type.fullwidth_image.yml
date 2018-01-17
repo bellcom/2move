@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: fullwidth_image
-label: 'Fullwidth image'
-revision: 0
-description: 'A fullwidth image is an image that spans across the page.'
