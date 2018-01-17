@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_image
+    - field.storage.block_content.field_button_text
+id: block_content.hero_image.field_button_text
+field_name: field_button_text
+entity_type: block_content
+bundle: hero_image
+label: 'Button text'
+description: 'Text for the modal button. This button will open blocks assigned to the ''Modal'' region in a modal popup.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Get started now'
+default_value_callback: ''
+settings: {  }
+field_type: string

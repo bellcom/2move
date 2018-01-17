@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_percentage_description_3
+    - node.type.percentage_ring
+id: node.percentage_ring.field_percentage_description_3
+field_name: field_percentage_description_3
+entity_type: node
+bundle: percentage_ring
+label: 'Percentage description 3'
+description: 'Third description for the percentage.'
+required: true
+translatable: false
+default_value:
+  -
+    value: Calories
+default_value_callback: ''
+settings: {  }
+field_type: string

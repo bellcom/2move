@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video_popup
+    - field.storage.block_content.field_plain_body
+id: block_content.video_popup.field_plain_body
+field_name: field_plain_body
+entity_type: block_content
+bundle: video_popup
+label: Body
+description: 'Body text for the video popup section.'
+required: true
+translatable: true
+default_value:
+  -
+    value: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas harum, hic officiis commodi reprehenderit explicabo tenetur eos! Excepturi adipisci consequatur quisquam error, velit, pariatur'
+default_value_callback: ''
+settings: {  }
+field_type: string_long

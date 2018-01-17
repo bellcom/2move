@@ -1,0 +1,21 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    label ? 'has-title',
+    content['body']['#bundle'] ? 'bundle-' ~ content['body']['#bundle'],
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  <div class="container">
+    <div class="row">
+      <div class="text-center wow animatePhone" data-wow-duration="2s">
+        {% block content %}
+          {{ content.field_image }}
+        {% endblock %}
+      </div>
+    </div>
+  </div></div>
+        
+      

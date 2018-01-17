@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_left
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.image_left.body
+field_name: body
+entity_type: block_content
+bundle: image_left
+label: Body
+description: 'The HTML body text.'
+required: false
+translatable: true
+default_value:
+  -
+    summary: ''
+    value: "                <div class=\"column\">\r\n                  <div class=\"media-left\">\r\n                    <i class=\"fa fa-2x fa-rss\"></i>\r\n                  </div>\r\n                  <div class=\"media-right\">\r\n                    <h4>Bootstrap 3x</h4>\r\n                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas harum, hic officiis commodi</p>\r\n                  </div>\r\n                </div>\r\n                <div class=\"column\">\r\n                  <div class=\"media-left\">\r\n                    <i class=\"fa fa-2x fa-credit-card\"></i>\r\n                  </div>\r\n                  <div class=\"media-right\">\r\n                    <h4>Font Awesome</h4>\r\n                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas harum, hic officiis commodi</p>\r\n                  </div>\r\n                </div>\r\n                <div class=\"column\">\r\n                  <div class=\"media-left\">\r\n                    <i class=\"fa fa-2x fa-cogs\"></i>\r\n                  </div>\r\n                  <div class=\"media-right\">\r\n                    <h4>Clean design</h4>\r\n                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas harum, hic officiis commodi</p>\r\n                  </div>\r\n                </div>\r\n"
+    format: full_html
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary
