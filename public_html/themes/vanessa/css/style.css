@@ -5,7 +5,7 @@
   Author: Murren
   Author URI: http://themeforest.net/user/murren20
   Version: 1.0
-  
+
   1.  Global
 
       1.1 General
@@ -18,7 +18,7 @@
       1.8 Backgrounds
       1.9 Content styles
 
-  2.  Header 
+  2.  Header
 
       2.1 Brand
       2.2 Navigation
@@ -49,8 +49,8 @@
       12.3 Min width 992px
       12.4 Min width 1200px
 
-    
-    
+
+
 /*-------------------------------------------------------------------------------
   1. Global
 -------------------------------------------------------------------------------*/
@@ -69,7 +69,7 @@
 @import url('owl.transitions.css');
 
 html{
- 
+
 }
 
 body{
@@ -134,7 +134,7 @@ body{
     padding-right: 10px;
 }
 h1,
-.h1{ 
+.h1{
   font-size: 36px;
   line-height: 1.3;
   font-weight: 700;
@@ -142,7 +142,7 @@ h1,
 }
 
 h2,
-.h2{ 
+.h2{
   position: relative;
   font-size: 28px;
   line-height: 1.4;
@@ -190,7 +190,7 @@ ul li{
   margin-top: 10px;
 }
 
-p{ 
+p{
   margin:10px 0 0;
 }
 
@@ -299,7 +299,7 @@ textarea.form-control{
     padding: 0!important;
     margin-bottom: 0!important;
 
-    
+
 }
 
 #price-page {
@@ -309,6 +309,8 @@ textarea.form-control{
     align-items: center;
     background-image:url('https://images.unsplash.com/photo-1490648875801-10d926b882d3?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
     background-size:cover;
+        background-color: #58a8d9;
+    background-blend-mode: color-burn;
 }
 
 #price-page .region-hero {
@@ -338,8 +340,11 @@ textarea.form-control{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image:url('https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
-    background-size:cover;
+    background-image: url(https://images.unsplash.com/photo-1498387727476-b30055b2ef21?auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: color-burn;
+    background-color: #58a8d9;
 
 }
 
@@ -618,7 +623,7 @@ a.fa:focus{
 .navbar-toggle .icon-bar{
   background-color: #2783e8;
   height: 2px;
-  width: 30px; 
+  width: 30px;
 }
 
 .navbar-toggle .icon-bar + .icon-bar{
@@ -766,7 +771,7 @@ a.fa:focus{
 }
 
 p {
-   color: #888e96;  
+   color: #888e96;
 }
 
 #fullwidth-image h4 {
@@ -880,7 +885,7 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.56);
     text-transform: uppercase;
     font-weight: 600;
     color: #445c7e;
-    
+
 }
 #block-imageleftblock .col-md-6 {
     text-align: left;
@@ -931,7 +936,7 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.56);
 .text p { color: #fff; }
 
 #newsletter {
-    background: #1b8af0;
+    background: #5d81a4;
     height: 200px;
     padding: 0;
     display: flex;
@@ -939,7 +944,7 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.56);
     align-items: center;
 }
 .region-image-left .browser-content {
-     background-image: url('../images/screens/screen_02.png');
+     background-image: url('../images/screens/screen__03.png');
 }
 
 .browser-content {
@@ -949,7 +954,7 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.56);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../images/screens/screen_01.png');
+    background-image: url('../images/screens/screen__02.png');
     background-size: 100%;
     background-position: cover;
     background-repeat: no-repeat;
@@ -1110,7 +1115,7 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.46);
   color: #4B4B4C;
 }
 
-.navbar.affix .navbar-nav > li > a:hover, 
+.navbar.affix .navbar-nav > li > a:hover,
 .navbar.affix .navbar-nav > .active > a,
 .navbar.force-affix .navbar-nav > li > a:hover,
 .navbar.force-affix .navbar-nav > .active > a{
@@ -1267,7 +1272,7 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.46);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
 .descriptive-section a {
@@ -1307,7 +1312,7 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.46);
     color: #fff;
     padding: 10px 20px;
     background: #50AFE9;
-    border-radius: 2px; 
+    border-radius: 2px;
 }
 
 .illustration {
@@ -1405,13 +1410,13 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.46);
 
 }
 
-@media screen and (max-width: 991px) { 
+@media screen and (max-width: 991px) {
 
-    .region .pricing-table {
+    .region .pricing-table {
         display: inherit!important;
 
     }
-    
+
     .descriptive-section {
         padding-left: 40px;
     }
@@ -1422,29 +1427,29 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.46);
         width: 100%;
         margin: 0;
     }
-    
+
     .illustration {
         padding: 0px!important;
-    
+
     }
-    
+
     .cta {
         flex-direction: column;
     }
-    
+
     .node__content {
         min-height: 1900px;
     }
-    
+
     .cta .text {
         text-align: center;
         margin-bottom: 15px;
     }
-    
+
     .illustration img {
         width: 60%;
     }
-    
+
     .w-image {
         background-size: 300px;
         background-position: center;
@@ -1719,7 +1724,7 @@ padding-left:90px;
           transition: .2s linear;
 }
 
-.owl-controls .owl-page.active span, 
+.owl-controls .owl-page.active span,
 .owl-controls .owl-page:hover span{
   background-color:#2783e8;
 }
@@ -1866,7 +1871,7 @@ padding-left:90px;
   overflow: visible;
 }
 
-.mfp-image-holder .mfp-close, 
+.mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close{
   padding: 0;
   margin-top: -10px;
@@ -1904,7 +1909,7 @@ img.mfp-img{
 .mfp-wrap .mfp-content {
   -webkit-perspective: 1300px;
           perspective: 1300px
-  
+
 }
 
 .mfp-wrap .mfp-figure,
@@ -1963,7 +1968,7 @@ img.mfp-img{
       -ms-transform: rotateX(-60deg);
        -o-transform: rotateX(-60deg);
           transform: rotateX(-60deg);
-  
+
 }
 
 .mfp-removing.mfp-bg {
@@ -2372,7 +2377,7 @@ body:not(.modal-open){
   line-height: 1;
   color: #fff;
   text-align: center;
-  text-shadow: none; 
+  text-shadow: none;
   cursor: pointer;
   border-radius: 50%;
   opacity: 1;
