@@ -1,0 +1,28 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    label ? 'has-title',
+    content['body']['#bundle'] ? 'bundle-' ~ content['body']['#bundle'],
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  <div class="container">
+    {% block content %}
+    <div class="row-columns row-padding row">  
+      <div class="col-feature-img column column-padding col-md-5 text-center wow fadeInLeft">
+        {{ content.field_image }}
+      </div>
+      <div class="col-feature column column-padding col-md-6">
+        {{ title_prefix }}{% if label %}{{ label }} {% endif %}{{ title_suffix }}
+        <h2 class="section-title">{{ content.field_title }}</h2>
+        <p>{{ content.field_plain_body }}</p>
+        <div class="section-body">
+          {{ content.body }}              
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+  </div>
+</div>

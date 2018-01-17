@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icon_class
+    - node.type.quick_fact
+id: node.quick_fact.field_icon_class
+field_name: field_icon_class
+entity_type: node
+bundle: quick_fact
+label: 'Icon Class'
+description: 'CSS Class for the icon. A list of supported CSS classes are available here: https://fortawesome.github.io/Font-Awesome/icons/'
+required: true
+translatable: false
+default_value:
+  -
+    value: fa-drupal
+default_value_callback: ''
+settings: {  }
+field_type: string

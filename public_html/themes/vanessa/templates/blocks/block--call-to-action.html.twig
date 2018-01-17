@@ -1,0 +1,28 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    label ? 'has-title',
+    content['body']['#bundle'] ? 'bundle-' ~ content['body']['#bundle'],
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  <div class="container">
+    <div class="row">
+      {% block content %}
+        <div class="col-md-4">
+          {{ title_prefix }}{% if label %}{{ label }} {% endif %}{{ title_suffix }}<h2 class="banner-title text-white">{{ content.field_title }}</h2>
+        </div>
+        <div class="col-md-5">
+          <span class="text-opacity">{{ content.field_plain_body }}</span>
+        </div>
+        {% if content.field_button_text|render %}
+          <div class="col-md-3 top-space-sm">
+            <a href="#request" class="btn btn-b-white" data-toggle="modal">{{content.field_button_text }}</a>
+          </div>
+        {% endif %}
+      {% endblock %}
+    </div>
+  </div>
+</div>

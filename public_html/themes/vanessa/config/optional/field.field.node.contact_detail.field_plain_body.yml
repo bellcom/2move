@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plain_body
+    - node.type.contact_detail
+id: node.contact_detail.field_plain_body
+field_name: field_plain_body
+entity_type: node
+bundle: contact_detail
+label: Body
+description: 'Description of the contact method.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

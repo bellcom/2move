@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: call_to_action
+label: 'Call to action'
+revision: 0
+description: 'A call to action includes emotive text and a button in a highlighted section.'

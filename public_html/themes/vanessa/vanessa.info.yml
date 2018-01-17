@@ -1,0 +1,37 @@
+name: Cocoon Vanessa
+type: theme
+base theme: classy
+description: 'One-Page Landing Page Theme, <a target="_blank" href="http://createdbycocoon.com/drupal-themes">Created by Cocoon</a>'
+package: Core
+# version: VERSION
+# core: 8.x
+libraries:
+  - vanessa/global-styling
+ckeditor_stylesheets:
+  - css/base/elements.css
+  - css/components/captions.css
+  - css/components/table.css
+regions:
+  header: Header
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  content: Content
+  hero: 'Hero section'
+  sponsors: 'Sponsors'
+  quick_facts: 'Quick facts'
+  fullwidth_image: 'Fullwidth image'
+  percentage_rings: 'Percentage rings'
+  video_popup: 'Video popup'
+  image_left: 'Image left'
+  image_right: 'Image right'
+  call_to_action: 'Call to action'
+  testimonials: 'Testimonials'
+  pricing_tables: 'Pricing tables'
+  newsletter: 'Newsletter'
+  contact_details: 'Contact details'
+  modal: 'Modal'
+
+version: '1.0.0'
+core: '8.x'
+project: 'drupal'

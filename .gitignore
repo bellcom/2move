@@ -46,6 +46,7 @@ tmp
 private
 share
 others
+mn_backup
 
 # Files that might appear on external disks
 .Spotlight-V100
