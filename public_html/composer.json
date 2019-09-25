@@ -5,11 +5,11 @@
     "license": "GPL-2.0+",
     "require": {
         "composer/installers": "^1.0.24",
-        "wikimedia/composer-merge-plugin": "~1.4"
+        "wikimedia/composer-merge-plugin": "~1.4",
+        "drupal/core": "^8.7",
+        "drupal/webform": "^5.4"
     },
-    "replace": {
-        "drupal/core": "~8.3"
-    },
+   
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
@@ -25,12 +25,9 @@
             "https://www.drupal.org/node/2718229"
         ],
         "merge-plugin": {
-            "include": [
-                "core/composer.json"
-            ],
-            "recurse": false,
-            "replace": false,
-            "merge-extra": false
+           "include": [
+                "web/modules/contrib/webform/composer.libraries.json"
+            ]
         },
         "installer-paths": {
             "core": ["type:drupal-core"],
