@@ -783,10 +783,6 @@ p {
 
 #percentage-rings {
     margin-bottom: 40px;
-    background-image: url('../images/2move.png');
-    background-size: 400px;
-    background-repeat: no-repeat;
-    background-position: right 300px;
 }
 
 .region-percentage-rings .col-md-push-6 {
@@ -796,7 +792,7 @@ p {
 }
 
 .section-title {
-    color: #445c7e;
+    color: #4b4d4f;
 }
 
 h2 {
@@ -884,7 +880,7 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.56);
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
-    color: #445c7e;
+    color: #4b4d4f;
 
 }
 #block-imageleftblock .col-md-6 {
@@ -2268,7 +2264,7 @@ img.mfp-img{
 }
 
 .social a:hover{
-  color: #2783e8;
+  color: #c13c8d;
 }
 .copy{
   margin-top: 30px;
