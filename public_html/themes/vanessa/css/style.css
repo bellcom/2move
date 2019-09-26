@@ -309,7 +309,7 @@ textarea.form-control{
     align-items: center;
     background-image:url('https://images.unsplash.com/photo-1490648875801-10d926b882d3?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
     background-size:cover;
-        background-color: #58a8d9;
+        background-color: #87738b;
     background-blend-mode: color-burn;
 }
 
@@ -319,7 +319,7 @@ textarea.form-control{
     justify-content: center;
     align-items: center;
     padding: 20px;
-        background-image: linear-gradient(to bottom right,rgba(234, 239, 246, 0.7),rgba(68, 92, 126, 0.9));
+    background-image: linear-gradient(to bottom right,rgb(42, 42, 42, 0.2),rgb(50, 10, 44, 22));
 }
 
 
@@ -344,7 +344,7 @@ textarea.form-control{
     background-size: cover;
     background-position: center center;
     background-blend-mode: color-burn;
-    background-color: #58a8d9;
+    background-color: #87738b;
 
 }
 
@@ -354,7 +354,7 @@ textarea.form-control{
     justify-content: center;
     align-items: center;
     padding: 20px;
-        background-image: linear-gradient(to bottom right,rgba(234, 239, 246, 0.7),rgba(68, 92, 126, 0.9));
+    background-image: linear-gradient(to bottom right,rgb(42, 42, 42, 0.77),rgb(50, 10, 44, 0.77));
 }
 
 #home h1 {
@@ -800,7 +800,7 @@ p {
 }
 
 h2 {
-        color: #445c7e;
+        color: #4b4d4f;
 }
 
 #image-left {
@@ -822,7 +822,7 @@ h2 {
 .region a {
     color: #fff;
     padding: 10px 20px;
-    background: #50AFE9;
+    background: #c13c8d;
     border-radius: 2px;
 
 }
@@ -936,7 +936,7 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.56);
 .text p { color: #fff; }
 
 #newsletter {
-    background: #5d81a4;
+    background: #61476b;
     height: 200px;
     padding: 0;
     display: flex;
@@ -1115,12 +1115,6 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.46);
   color: #4B4B4C;
 }
 
-.navbar.affix .navbar-nav > li > a:hover,
-.navbar.affix .navbar-nav > .active > a,
-.navbar.force-affix .navbar-nav > li > a:hover,
-.navbar.force-affix .navbar-nav > .active > a{
-  color: #fff;
-}
 
 .navbar.affix .navbar-toggle,
 .navbar.force-affix .navbar-toggle {
@@ -1302,7 +1296,7 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.46);
     box-shadow: none;
     color: #fff;
     padding: 10px 20px;
-    background: #50AFE9;
+    background: #c13c8d;
     border-radius: 2px;
 }
 
@@ -1311,7 +1305,7 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.46);
     box-shadow: none;
     color: #fff;
     padding: 10px 20px;
-    background: #50AFE9;
+    background: #c13c8d;
     border-radius: 2px;
 }
 
@@ -1319,26 +1313,10 @@ box-shadow: 0px 0px 16px 0px rgba(208,221,232,0.46);
     padding-right: 100px;
 }
 
-.page--node .menu--main a:hover {
-    color: #2783e8!important;
-}
 
-.page--about .menu--main a:hover {
-    color: #2783e8!important;
-}
-
-.page--contact .menu--main a:hover {
-    color: #2783e8!important;
-}
-
-.page--faq .menu--main a:hover {
-    color: #2783e8!important;
-}
-
-
-.node__content {
+/*.node__content {
     height: 90vh;
-}
+}*/
 
 .page--about .node__content {
     height: 100vh;
@@ -1570,7 +1548,7 @@ padding-left:90px;
   top: 16px;
   left: 50%;
   margin-left: -25px;
-  background-color: #fff;
+  background-color: #c13c8d;
   z-index: 100;
       -webkit-box-shadow: 0 0 45px rgba(0,0,0,0.08);
   box-shadow: 0 0 45px rgba(0,0,0,0.08);
@@ -1595,23 +1573,23 @@ padding-left:90px;
   right: auto;
 }
 .timeline-badge.primary {
-  background-color: #2783e8 !important;
+  background-color: #c13c8d !important;
 }
 .timeline-badge.success {
-  background-color: #2783e8 !important;
+  background-color: #c13c8d !important;
 }
 .timeline-badge.warning {
-  background-color: #2783e8 !important;
+  background-color: #c13c8d !important;
 }
 .timeline-badge.danger {
-  background-color: #2783e8 !important;
+  background-color: #c13c8d !important;
 }
 .timeline-badge.info {
-  background-color: #2783e8 !important;
+  background-color: #c13c8d !important;
 }
 .timeline-title {
   margin-top: 0;
-  color: #445c7e;
+  color: #902d69;
     font-size: 22px;
 }
 .timeline-body > p,
@@ -2527,7 +2505,7 @@ body:not(.modal-open){
     top: 100%;
     left: 0;
     width: 0;
-    border-top: 1px solid #2783e8;
+    border-top: 1px solid #c13c8d;
     margin-top: 1px;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -2541,7 +2519,7 @@ body:not(.modal-open){
 
   .navbar.affix .navbar-nav li a:hover,
   .navbar.affix .navbar-nav .active a{
-    color: #2783e8;
+    color: #902d69;
   }
 
 
@@ -2751,3 +2729,9 @@ body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open #menu {
 .block-simplenews form .description {
   display: none;
 }
+
+
+
+/* MN@bellcom */
+
+
