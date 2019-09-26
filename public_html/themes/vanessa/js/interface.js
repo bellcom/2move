@@ -4,12 +4,12 @@
 
 
   	/*-------------------------------------------------------------------------------
-	  Detect mobile device 
+	  Detect mobile device
 	-------------------------------------------------------------------------------*/
 
 
 
-	var mobileDevice = false; 
+	var mobileDevice = false;
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 	  	$('html').addClass('mobile');
@@ -34,7 +34,7 @@
 		$('.loader').fadeOut();
 
     	var wow = new WOW({
-		    offset: 100,          
+		    offset: 100,
 		    mobile: false
 		  }
 		);
@@ -167,13 +167,13 @@
 	        if( bottom_of_window > bottom_of_object ){
 		        $('.chart').easyPieChart({
 		          scaleColor:false,
-		          trackColor:'#d7e1f0',
+		          trackColor:'#efd7ee',
 		          barColor: function(percent) {
 				    var ctx = this.renderer.getCtx();
 				    var canvas = this.renderer.getCanvas();
 				    var gradient = ctx.createLinearGradient(0,0,canvas.width,0);
-				        gradient.addColorStop(0, "#50AFE9");
-				        gradient.addColorStop(1, "#d7e1f0");
+				        gradient.addColorStop(0, "#c13c8d");
+				        gradient.addColorStop(1, "#efd7ee");
 				    return gradient;
 				  },
 			      lineWidth:6,
@@ -183,7 +183,7 @@
 		          animate:1000
 		        });
 	        }
-	    }); 
+	    });
 	});
 
 
@@ -223,7 +223,7 @@
 	-------------------------------------------------------------------------------*/
 
 
-	
+
     $('#mc-form').ajaxChimp({
         url: 'http://blahblah.us1.list-manage.com/subscribe/post?u=5afsdhfuhdsiufdba6f8802&id=4djhfdsh9'
             //http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
