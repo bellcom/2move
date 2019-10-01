@@ -68,13 +68,13 @@
         </button>
         <a href="{% if is_front %}#top{% else %}{{ path('<front>') }}{% endif %}" class="brand js-target-scroll">
           <img class="brand-img-white" alt="" width="180" src="{{ base_path ~ directory }}/images/brand-white.png">
-          <img class="brand-img" alt="" width="130" src="{{ base_path ~ directory }}/images/brand-white.png">
+          <img class="brand-img" alt="" width="130" src="{{ base_path ~ directory }}/images/brand.png">
         </a>
       </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse"> 
+        <div class="collapse navbar-collapse" id="navbar-collapse">
           {{ page.header }}
         </div>
-  
+
     </div>
   </header>
 
@@ -167,7 +167,7 @@
         {% if footer_pinterest %}<a target="_blank" href="{{ footer_pinterest }}" class="fa fa-2x fa-pinterest"></a>{% endif %}
         {% if footer_youtube %}<a target="_blank" href="{{ footer_youtube }}" class="fa fa-2x fa-youtube-play"></a>{% endif %}
         {% if footer_linkedin %}<a target="_blank" href="{{ footer_linkedin }}" class="fa fa-2x fa-linkedin"></a>{% endif %}
-      </div>     
+      </div>
     </div>
     {% if footer_copyright %}
       <div class="copy">
