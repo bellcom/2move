@@ -25,17 +25,27 @@
  * @ingroup themeable
  */
 #}
+{%
+  set body_classes = [
+  logged_in ? 'user-logged-in',
+  not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+  node_type ? 'page-node-type-' ~ node_type|clean_class,
+  db_offline ? 'db-offline',
+  theme.settings.navbar_position ? 'navbar-is-' ~ theme.settings.navbar_position,
+  theme.has_glyphicons ? 'has-glyphicons',
+]
+%}
 <!DOCTYPE html>
 <html{{ html_attributes }}>
   <head>
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css">
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
     <script src="{{ base_path ~ directory }}/js/jquery.min.js"></script>
   </head>
-  <body>
+  <body{{ attributes.addClass(body_classes) }}>
 
     {{ page_top }}
     {{ page }}
@@ -63,20 +73,20 @@
 			            {"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},
 			            {"featureType":"water","elementType":"all","stylers":[{"color":"#dbdbdb"},{"visibility":"on"}]}]
 			    };
-    
+
 			    map = new google.maps.Map(document.getElementById('map'),
 			    mapOptions);
-    
+
 			    //change address details here
-			    var contentString = '<div class="map-info">' 
-			    + '<div class="map-title">' 
-			    + '<p class="map-address">{% if map_address %}<div class="map-address-row"><i class="fa fa-map-marker"></i><span class="text">{{ map_address }}</span></div>{% endif %}{% if map_phone %}<div class="map-address-row"><i class="fa fa-phone"></i><span class="text">{{ map_phone }}</span></div>{% endif %}<div class="map-address-row">{% if map_email %}<span class="map-email"><i class="fa fa-envelope"></i><span class="text">{{ map_email }}</span></span>{% endif %}</p>' 
+			    var contentString = '<div class="map-info">'
+			    + '<div class="map-title">'
+			    + '<p class="map-address">{% if map_address %}<div class="map-address-row"><i class="fa fa-map-marker"></i><span class="text">{{ map_address }}</span></div>{% endif %}{% if map_phone %}<div class="map-address-row"><i class="fa fa-phone"></i><span class="text">{{ map_phone }}</span></div>{% endif %}<div class="map-address-row">{% if map_email %}<span class="map-email"><i class="fa fa-envelope"></i><span class="text">{{ map_email }}</span></span>{% endif %}</p>'
 			    + '{% if map_address %}<p class="gmap-open"><a href="https://www.google.com/maps/place/{{ map_address }}/data=!4m2!3m1!1s0x89c259af44f80211:0xbd87d30d3c7da9d2?sa=X&amp;ei=KqAdVazxJMTkuQS9sIGIBQ&amp;aved=0CB0Q8gEwAA" target="_blank">Open in Google Maps</a></p>{% endif %}</div>';
-        
+
     			var infowindow = new google.maps.InfoWindow({
 			        content: contentString,
 			    });
-    
+
 			    marker = new google.maps.Marker({
 			        map: map,
 			        draggable: true,
