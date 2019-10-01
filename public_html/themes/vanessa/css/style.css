@@ -2728,6 +2728,39 @@ body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open #menu {
 
 
 
-/* MN@bellcom */
+/* HR appearance */
+.path-da-hr #price-page {
+  background-color: #63b7b7;
+}
 
+.path-da-hr #price-page .region-hero {
+  background-image: linear-gradient(to bottom right, rgba(42, 42, 42, 0.2), rgb(20, 71, 74));
+}
 
+.path-da-hr .region a {
+  background: #50bdc4;
+}
+
+.path-da-hr #newsletter {
+  background: #22576b;
+}
+
+.path-da-hr .navbar-nav li:after {
+  border-top: 1px solid #50bdc4;
+}
+
+.path-da-hr .timeline > li > .timeline-badge {
+  background-color: #50bdc4;
+}
+
+.path-da-hr .timeline-badge.warning {
+  background-color: #50bdc4 !important;
+}
+
+.path-da-hr .timeline-title {
+  color: #107a7a;
+}
+
+.path-da-hr .social a:hover {
+  color: #50bdc4;
+}
