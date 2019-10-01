@@ -75,7 +75,7 @@ global-styling:
     js/jquery.ajaxchimp.min.js: {}
     js/jquery.youtubebackground.js: {}
     js/interface.js: {}
-    # js/gmap.js: {}
+     js/gmap.js: {}
   dependencies:
     - core/jquery
 
