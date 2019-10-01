@@ -2771,3 +2771,7 @@ body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open #menu {
 body:not(.path-da-hr) .brand-img--hr {
   display: none !important;
 }
+
+.col-pie {
+  display: none !important;
+}
