@@ -49,6 +49,15 @@ function vanessa_preprocess_html(&$variables) {
   $variables['map_address'] = theme_get_setting('map_address');
   $variables['map_phone'] = theme_get_setting('map_phone');
   $variables['map_email'] = theme_get_setting('map_email');
+
+  $variables['path_info']['args'] = FALSE;
+
+  $path = \Drupal::request()->getPathInfo();
+  $path_args = explode('/', $path);
+
+  if (count($path_args) >= 3) {
+    $variables['path_info']['args'] = Html::cleanCssIdentifier(ltrim($path, '/'));
+  }
 }
 
 function vanessa_preprocess_page(&$variables) {
@@ -385,7 +394,7 @@ function vanessa_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
   }
 };
 
-$form['#submit'][] = $submit; 
+$form['#submit'][] = $submit;
 */
 
 }
@@ -407,7 +416,7 @@ $form['#submit'][] = $submit;
       $uri = $file[0]->getFileUri();
       $file_url = file_create_url($uri);
       $file_url = str_ireplace($base_url, '', $file_url);
-      $form_state->setValue('logo_dark', $file_url); 
+      $form_state->setValue('logo_dark', $file_url);
     }
  }
 }*/
