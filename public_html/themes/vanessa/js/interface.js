@@ -50,17 +50,17 @@
 	  Smooth scroll to anchor
 	-------------------------------------------------------------------------------*/
 
-
-
-    $('.js-target-scroll').on('click', function() {
-        var target = $(this.hash);
-        if (target.length) {
-            $('html,body').animate({
-                scrollTop: (target.offset().top - navbarAffixHeight + 1)
-            }, 1000);
-            return false;
-        }
-    });
+    //
+    //
+    // $('.js-target-scroll').on('click', function() {
+    //     var target = $(this.hash);
+    //     if (target.length) {
+    //         $('html,body').animate({
+    //             scrollTop: (target.offset().top - navbarAffixHeight + 1)
+    //         }, 1000);
+    //         return false;
+    //     }
+    // });
 
 
 
