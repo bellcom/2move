@@ -28,21 +28,20 @@
 	-------------------------------------------------------------------------------*/
 
 
+  $(window).load(function () {
 
-	$(window).load(function(){
+    $('.loader').fadeOut();
 
-		$('.loader').fadeOut();
+    var wow = new WOW({
+        offset: 100,
+        mobile: false
+      }
+    );
+    wow.init();
+  });
 
-    	var wow = new WOW({
-		    offset: 100,
-		    mobile: false
-		  }
-		);
-		wow.init();
-	});
-
-	var navbar=$('.navbar');
-	var navbarAffixHeight=73
+  var navbar = $('.navbar');
+  var navbarAffixHeight = 73
 
 
 
@@ -123,13 +122,12 @@
 	});
 
 	$(".partners-carousel").owlCarousel({
-		itemsMobile:[479,1],
-		itemsTablet:[768,2],
-		itemsDesktopSmall:[979,3],
-		items:4,
-		responsiveRefreshRate:0,
-	 	autoHeight : true,
-    	responsiveRefreshRate : 0,
+    itemsMobile: [479, 1],
+    itemsTablet: [768, 2],
+    itemsDesktopSmall: [979, 3],
+    items: 4,
+    responsiveRefreshRate: 0,
+    autoHeight: true,
 	});
 
 
@@ -158,33 +156,36 @@
 	-------------------------------------------------------------------------------*/
 
 
+  $(window).scroll(function () {
 
-    $(window).scroll( function(){
+    $('.chart').each(function (i) {
+      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-	    $('.chart').each( function(i){
-	        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-	        var bottom_of_window = $(window).scrollTop() + $(window).height();
-	        if( bottom_of_window > bottom_of_object ){
-		        $('.chart').easyPieChart({
-		          scaleColor:false,
-		          trackColor:'#efd7ee',
-		          barColor: function(percent) {
-				    var ctx = this.renderer.getCtx();
-				    var canvas = this.renderer.getCanvas();
-				    var gradient = ctx.createLinearGradient(0,0,canvas.width,0);
-				        gradient.addColorStop(0, "#c13c8d");
-				        gradient.addColorStop(1, "#efd7ee");
-				    return gradient;
-				  },
-			      lineWidth:6,
-			      lineCap: false,
-			      rotate:180,
-			      size:180,
-		          animate:1000
-		        });
-	        }
-	    });
-	});
+      if (bottom_of_window > bottom_of_object) {
+
+        $('.chart').easyPieChart({
+          scaleColor: false,
+          trackColor: '#efd7ee',
+          barColor: function (percent) {
+            var ctx = this.renderer.getCtx();
+            var canvas = this.renderer.getCanvas();
+            var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+
+            gradient.addColorStop(0, "#c13c8d");
+            gradient.addColorStop(1, "#efd7ee");
+
+            return gradient;
+          },
+          lineWidth: 6,
+          lineCap: false,
+          rotate: 180,
+          size: 180,
+          animate: 1000
+        });
+      }
+    });
+  });
 
 
 
