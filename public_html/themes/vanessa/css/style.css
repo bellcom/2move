@@ -2764,3 +2764,10 @@ body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open #menu {
 .path-da-hr .social a:hover {
   color: #50bdc4;
 }
+
+.path-da-hr .brand-img--default {
+  display: none !important;
+}
+body:not(.path-da-hr) .brand-img--hr {
+  display: none !important;
+}
