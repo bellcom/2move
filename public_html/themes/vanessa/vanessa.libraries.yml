@@ -75,7 +75,8 @@ global-styling:
     js/jquery.ajaxchimp.min.js: {}
     js/jquery.youtubebackground.js: {}
     js/interface.js: {}
-     js/gmap.js: {}
+    https://maps.googleapis.com/maps/api/js?v=3.exp.js: {}
+    # js/gmap.js: {}
   dependencies:
     - core/jquery
 
